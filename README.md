@@ -18,7 +18,7 @@ To disconnect from the Super Tux Kart console just press **CTRL-A CTRL-D**. This
 
 I have only tested this on a Ubuntu 16.04 server...
 
-If you want to turn off the server respawning type "**touch /root/SuperTuxKart/nostart**". To reenable it type "**rm /root/SuperTuxKart/nostart**".
+If you want to turn off the server respawning type "**touch /home/stkowner/install/nostart**". To reenable it type "**rm /stkowner/install/nostart**".
 
 ---
 Note: If you don't already have the "screen" tool installed you will need to install it by "**sudo apt-get install screen**".
