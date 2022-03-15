@@ -47,7 +47,8 @@ while (-1)
 		# See if they want the server started
 		if (! -f "$SUPERTUXKARTDIR/nostart")
 		{
-			chdir("foo");
+			chdir("cd $SUPERTUXKARTDIR/share/supertuxkart/data
+");
 			# The Log Entry
 			my $datestring = localtime();
 			my $TIME="Super Tux Kart Down, Restarting: $datestring";
@@ -57,7 +58,7 @@ while (-1)
 			#chdir "$SUPERTUXKARTDIR/bin";
 			print "Starting screen process\n";
 			#system("$SCREENCMD -fa -S MegaMek -d -U -m ./gradlew --foreground");
-			system("$SCREENCMD -fa -S Supertuxkart -d -U -m ./run_game.sh --server-config=myconfig.xml --network-console");
+			system("$SCREENCMD -fa -S Supertuxkart -d -U -m $SUPERTUXKARTDIR/bin/supertuxkart --server-config=myconfig.xml --network-console");
 		}
 	}
 	# Sleep for 1 minute before checking again
