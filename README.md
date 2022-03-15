@@ -8,9 +8,9 @@ Official support sites: [Official Github Repo](https://github.com/fstltna/SuperT
 These start up the Super Tux Kart server at boot time with a "screen" process.
 
 1. Copy **supertuxkart** into **/etc/init.d** - make sure it is executable
-2. Copy **startsupertuxkart** into **/root/SuperTuxKart** - make sure it is executable
-3. Run "**systemctl enable supertuxkart**" (only needed once, will stick)
-4. Run "**systemctl start supertuxkart**" - starts Super Tux Kart server without restarting the OS.
+2. Copy **startsupertuxkart** into **/home/stkowner/install** - make sure it is executable
+3. Put **@reboot /home/stkowner/bin/supertuxkart start** into your crontab
+
 
 When you want to view the Super Tux Kart console, just enter "**screen -r**" in your shell.
 
