@@ -10,6 +10,7 @@ These start up the Super Tux Kart server at boot time with a "screen" process.
 1. Copy **supertuxkart** into **/home/stkowner/bin** - make sure it is executable
 2. Copy **startsupertuxkart** into **/home/stkowner/install** - make sure it is executable
 3. Put **@reboot /home/stkowner/bin/supertuxkart start** into your crontab
+4. Run "./installdeps"
 
 
 When you want to view the Super Tux Kart console, just enter "**screen -r**" in your shell.
