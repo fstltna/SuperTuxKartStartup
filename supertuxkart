@@ -35,7 +35,7 @@ if ($Command eq "")
 	$Command = "NONE";
 }
 
-my $running=`ps ax|grep supertuxkart|grep -v grep`;
+my $running=`ps ax|grep supertuxkart|grep -v grep|grep -v status`;
 
 if ($Command eq "start")
 {
@@ -78,6 +78,7 @@ elsif ($Command eq "status")
 {
 	if ($running ne "")
 	{
+		# print"running = '$running'\n";
 		print("Super Tux Kart Server Running\n");
 	}
 	else
